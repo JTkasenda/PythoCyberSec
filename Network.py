@@ -44,7 +44,7 @@ def plotIPs(pcap):
     return kmlPts
 
 def main():
-    f = open("16032024.pcap", "rb")
+    f = open("Networks.pcap", "rb")
     pcap = dpkt.pcap.Reader(f)
     kmlheader = '<?xml version="1.0" encoding="UTF-8"?> \n<kml xmlns="http://www.opengis.net/kml/2.2">\n<Documen>\n'\
     '<Style id="transBluePoly">'\
